@@ -6,7 +6,7 @@ import { setSearchField, requestCountries, openDialog, closeDialog } from '../st
 import SearchBox from '../components/SearchBox';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import CountryDetails from './CountryDetails';
+import CountryDetails from '../components/CountryDetails';
 import { withRouter } from 'react-router';
 
 

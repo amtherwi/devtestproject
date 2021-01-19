@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import { withRouter } from 'react-router';
+// import { withRouter } from 'react-router';
 import Container from "@material-ui/core/Container";
 import Typography from "@material-ui/core/Typography";
-import Paper from '@material-ui/core/Paper';
+// import Paper from '@material-ui/core/Paper';
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import BarChart from '../components/BarChart';
@@ -40,7 +40,7 @@ const useStyles = makeStyles({
 });
 function Dashboard(props) {
     const classes = useStyles();
-    const [data, setData] = useState([]);
+    // const [data, setData] = useState([]);
     const [countries, setCountries] = useState([]);
     const [values, setValues] = useState([]);
 
@@ -70,9 +70,9 @@ function Dashboard(props) {
     return (
         <div className={classes.root}>
             {/* <Paper className={classes.paper}> */}
-               
-                <Grid className={classes.grid} spacing={2}>
-                <Card container >  
+               <Container spacing={3}>
+                <Grid className={classes.grid}>
+                <Card>  
                 <Typography
                         color="textPrimary"
                         className={classes.title}
@@ -84,6 +84,7 @@ function Dashboard(props) {
                     <BarChart countries={countries} values={values}/>
                 </Card>
                 </Grid>
+                </Container>
             {/* </Paper> */}
         </div>
     )

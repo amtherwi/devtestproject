@@ -12,7 +12,7 @@ import Typography from '@material-ui/core/Typography';
 import { useDispatch, useSelector } from 'react-redux'
 import { closeDialog } from '../store/actions/countries.actions'
 
-import Chart from '../components/Chart'
+import Chart from './Chart'
 import { List, ListItem } from '@material-ui/core';
 
 const styles = (theme) => ({
@@ -102,7 +102,7 @@ const CountryDetails = ({ country, open }) => {
       setChartValue([])
       console.log("cleaned up");
     };
-  }, []);
+  }, [country]);
 
   const handleClose = () => {
     dispatch(closeDialog());

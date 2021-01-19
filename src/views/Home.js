@@ -58,7 +58,7 @@ function Home(props) {
     <Typography>Unit - Thousand Barrels per day (kb/d)</Typography>
     <Typography>Product - Crude oil </Typography>
     <Typography>BALANCE - Exports </Typography>
-    <Typography><a class="btn btn-primary btn-medium" href="http://www.jodidb.org/TableViewer/tableView.aspx?ReportId=93906" role="button">
+    <Typography><a className="btn btn-primary btn-medium" href="http://www.jodidb.org/TableViewer/tableView.aspx?ReportId=93906" role="button">
         Orignal Data..
         </a>
           </Typography>

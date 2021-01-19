@@ -35,7 +35,7 @@ const options={
 
 const BarChart = ({ countries, values }) => {
 
-  console.log("countries: "+ countries)
+  //console.log("countries: "+ countries)
   const chooseColor = () => {
     const random = [];
     for (let i = 0; i < 3; i++) {
